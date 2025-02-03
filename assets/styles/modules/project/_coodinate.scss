@@ -1,0 +1,87 @@
+@use "../layout/variable" as *;
+
+.coordination {
+    margin: 7vw;
+
+    .title {
+        font-size: 2vw;
+        text-align: center;
+
+        .main-text {
+            margin-top: 2vw;
+            font-size: 1.6vw;
+            font-weight: 500;
+        }
+    }
+
+    .slide-staff {
+        margin: 4vw 0vw;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+
+        .slide-img {
+            display: flex;
+            gap: 10vw;
+            width: calc(20vw * 6);
+            transition: transform 1s ease;
+            animation: slide 10s infinite linear; // スライドアニメーションの追加
+            animation-play-state: running; // 初期状態はアニメーションが動くように
+
+            /* ホバー時にアニメーションを停止 */
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                transition: transform 0.3s ease;
+
+                img {
+                    width: 10vw;
+                    height: auto;
+                    object-fit: cover;
+                    flex-shrink: 0;
+                }
+
+                p {
+                    margin-top: 0.5vw;
+                    text-align: center;
+                    font-size: 1.6vw;
+                    color: black;
+                }
+
+                .SNS-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0.5vw 0vw;
+
+                    .SNS-icon {
+                        width: 2vw;
+                        margin-right: 1vw;
+                    }
+
+                    .insta {
+                        font-size: 1vw;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50vw); // 左にスライドするように修正
+        }
+    }
+}

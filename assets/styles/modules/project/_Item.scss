@@ -1,0 +1,319 @@
+@use "../layout/variable" as *;
+
+.Item {
+    margin-top: 4vw;
+    position: relative;
+    background-image: url(../img/Item-img/object-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10vw 0;
+    height: 155vw;
+
+    .title-text {
+        margin-bottom: 3vw;
+        font-size: 5vw;
+        margin-left: 10vw;
+        color: #DBB64F;
+    }
+
+    .img-flex {
+        display: flex;
+        justify-content: center;
+
+        .img1 {
+            position: relative;
+
+            .item-img {
+                img {
+                    width: 35vw;
+                }
+
+                .money {
+                    width: 18vw;
+                    position: absolute;
+                    top: 0;
+                    margin-top: 49vw;
+                    margin-left: 8.5vw;
+
+                    p {
+                        padding: 0.5vw 0.5vw;
+                        background-color: #fff;
+                        font-size: 1.6vw;
+                        text-align: center;
+                    }
+                }
+
+                .btn {
+                    position: absolute;
+                    margin-top: 4.3vw;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    margin-left: 13.5vw;
+                    width: 8vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+        }
+
+        .img2 {
+            display: block;
+            margin-left: 9vw;
+
+            .item-img {
+                position: relative;
+
+                img {
+                    width: 23vw;
+                }
+
+                .money {
+                    width: 12vw;
+                    position: absolute;
+                    top: 0;
+                    margin-top: 13.5vw;
+                    margin-left: 5.5vw;
+                    text-align: center;
+
+                    p {
+                        padding: 0.5vw 0.5vw;
+                        background-color: #fff;
+                        font-size: 1.2vw;
+                    }
+                }
+
+                .btn {
+                    position: absolute;
+                    margin-top: 3.3vw;
+                    display: flex;
+                    flex-direction: column;
+                    width: 8vw;
+                    margin-left: 7.5vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+
+            .item-img2 {
+                position: relative;
+                margin-top: 11vw;
+
+                img {
+                    width: 24vw;
+                }
+
+                .money {
+                    position: absolute;
+                    padding: 0.5vw 0.5vw;
+                    top: 0;
+                    font-size: 1.2vw;
+                    margin-top: 23.4vw;
+                    margin-left: 5.5vw;
+                    background-color: #fff;
+                    width: 13vw;
+                    text-align: center;
+
+                    p {
+                        padding: 0.5vw 0.5vw;
+                        background-color: #fff;
+                        font-size: 1.2vw;
+                    }
+                }
+
+                .btn {
+                    position: absolute;
+                    margin-top: 4.4vw;
+                    display: flex;
+                    flex-direction: column;
+                    width: 8vw;
+                    margin-left: 8vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+        }
+    }
+
+    .img-flex2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 15vw;
+
+        .imgs1 {
+            display: inline-block;
+
+            .item-img {
+                position: relative;
+
+                img {
+                    width: 20vw;
+                }
+
+                .money {
+                    font-size: 1.2vw;
+                    position: absolute;
+                    padding: 0.5vw 0.5vw;
+                    top: 0;
+                    margin-top: 19.5vw;
+                    margin-left: 2.5vw;
+                    background-color: #fff;
+                    width: 15vw;
+                    text-align: center;
+                    p {
+                        background-color: #fff;
+                        font-size: 1.2vw;
+                    }
+                }
+
+                .btn {
+                    position: absolute;
+                    margin-top: 5.2vw;
+                    display: flex;
+                    flex-direction: column;
+                    width: 8vw;
+                    margin-left: 6vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+
+            .item-img2 {
+                position: relative;
+                margin-top: 11vw;
+
+                img {
+                    width: 18vw;
+                }
+
+                .money {
+                    position: absolute;
+                    padding: 0.5vw 0.5vw;
+                    top: 0;
+                    margin-top: 17.5vw;
+                    margin-left: 2.5vw;
+                    background-color: #fff;
+                    width: 13vw;
+                    font-size: 1.2vw;
+                    text-align: center;
+
+                    p {
+                        background-color: #fff;
+                        font-size: 1.2vw;
+                    }
+                }
+
+                .btn {
+                    margin-top:5.5vw;
+                    display: flex;
+                    flex-direction: column;
+                    width: 8vw;
+                    margin-left: 5vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+        }
+        .img2{
+            position: relative;
+            .item-img{
+                margin-left: 14vw;
+                img{
+                    width: 35vw;
+                }
+                .money{
+                    position: absolute;
+                    padding: 0.5vw 0.5vw;
+                    top: 0;
+                    margin-top: 49vw;
+                    margin-left: 11.5vw;
+                    background-color: #fff;
+                    width: 13vw;
+                    font-size: 1.2vw;
+                    text-align: center;
+                    p{
+                        p {
+                            background-color: #fff;
+                            font-size: 1.2vw;
+                        }
+                    }
+                }
+                .btn{
+                    margin-top:2.8vw;
+                    display: flex;
+                    flex-direction: column;
+                    width: 8vw;
+                    margin-left: 14vw;
+                    padding: 0.5vw 1vw;
+                    background-color: #DBB64F;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    font-size: 1vw;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                .btn:hover {
+                    background-color: #561B24;
+                }
+            }
+        }
+    }
+}

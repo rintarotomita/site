@@ -1,0 +1,80 @@
+@use "../layout/variable" as *;
+
+.Footer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; // 高さを調整
+
+    .Footer-imgs {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out, transform 1.5s ease-out; /* より遅いフェードイン/アウトとスムーズなトランジション */
+            transform: scale(1.1); /* 初期状態で少し拡大 */
+        }
+
+        img.active {
+            opacity: 1; /* 表示する画像 */
+            transform: scale(1); /* 正常なサイズに戻る */
+        }
+    }
+    .Footer-menu{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+        .menu-item{
+            display: flex;
+            flex-direction: row;
+            gap: 20%;
+            a{
+                font-size: 1.6vw;
+                font-weight: 700;
+                text-decoration: none;
+                list-style: none;
+                color: black;
+            }
+        }
+        .SNS-icon{
+            position: absolute;
+            margin-top: 3vw;
+            .SNS-menu{
+                display: flex;
+                p{
+                    margin-top: 0.5vw;
+                    font-weight: 700;
+                    color: black;
+                    font-size: 1.6vw;
+                }
+                .line-img{
+                    margin-left: 1.5vw;
+                    width: 0.1vw;
+                    height: 7vh;
+                }
+                .SNS-content{
+                    margin-top: 0.5vw;
+                    margin-left: 5vw;
+                    img{
+                        width: 3vw;
+                    }
+                    .Twitter{
+                        margin-left: 1vw;
+                        margin-right: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

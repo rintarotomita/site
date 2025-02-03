@@ -1,0 +1,74 @@
+@use "../layout/variable" as *;
+
+.Top{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    .slider{
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease;
+        .Top-img{
+            flex: 0 0 100%;
+            margin-top: 5vw;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+    .img-text{
+        position: absolute;
+        top: 40%;
+        left: 85%;
+        transform: translateY(-50%);
+        writing-mode: vertical-rl;
+        color: #DBB64F; 
+        font-size: 3vw;
+    }
+}
+
+#text-animation{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #DBB64F;
+    display: flex;
+    align-items: center;
+    .text{
+        margin-top: 3vw;
+        margin-right: 2vw;
+        font-size: 2vw;    display: inline-block;
+        white-space: nowrap;
+        animation: slide 10s linear infinite;
+        color: black; 
+    }
+    @keyframes slide {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+.text-container{
+    .text-image{
+        text-align: center;
+        img{
+            width: 80%;
+        }
+    }
+    .text-content{
+        display: flex;
+        justify-content: center;
+        font-size: 0.8vw;
+        margin-top: 1vw;
+        .English{
+            margin-left: 5vw;
+        }
+    }
+}
